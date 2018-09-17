@@ -1,0 +1,43 @@
+baseURL = "http://blog.lotuslab.org/"
+languageCode = "zh-cn"
+title = "Lotuslab"
+theme = "whiteplain"
+
+[params]
+  # Date format
+  dateFormat = "2006-01-02 15:04:05"
+  imgHost = "http://img.lotuslab.org/blog"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# Header Menu
+[[menu.main]]
+  name = "Categories"
+  identifier = "categories"
+  url = "/categories/"
+  weight = 1
+[[menu.main]]
+  name = "Tags"
+  identifier = "tags"
+  url = "/tags/"
+  weight = 2
+[[menu.main]]
+  name = "Archives"
+  identifier = "archives"
+  url = "/archives/"
+  weight = 3
+[[menu.main]]
+  name = "About"
+  identifier = "about"
+  url = "/about/"
+  weight = 4
+
+# Footer Menu
+[[menu.footer]]
+  name = "About"
+  weight = 1
+  identifier = "about"
+  url = "/about/"
