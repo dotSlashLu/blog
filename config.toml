@@ -2,11 +2,22 @@ baseURL = "http://blog.lotuslab.org/"
 languageCode = "zh-cn"
 title = "Lotuslab"
 theme = "whiteplain"
+copyright = "&copy; Copyright dotSlashLu"
+
+pygmentsUseClasses = true
+linenos = "table"
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
 
 [params]
   # Date format
   dateFormat = "2006-01-02 15:04:05"
   imgHost = "https://img.lotuslab.org/blog"
+
+[params.author]
+  name = "dotSlashLu"
+  avatar = "https://img.lotuslab.org/blog/_about/avatar.jpg"
+  github = "dotSlashLu"
 
 [taxonomies]
   category = "categories"

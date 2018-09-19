@@ -1,7 +1,7 @@
 +++
 title = "笔记本电脑对比表 - A Notebook Comparison sheet"
 date = "Mon, 26 Feb 2018 02:14:28 GMT"
-categories = ["生活", "gadget",]
+categories = ["生活", "Gadget"]
 +++
 
 要买一台笔记本电脑，15000 RMB左右预算，花一上午时间，参考官网、电商、Wikipedia、Intel网站做了一个横向对比，对比了CPU、RAM、Disk、Display(size ppi nit)、Battery Life、GPU、Weight / Height、Price这些维度，精力有限，只罗列了常见的选择，希望于诸君有用。

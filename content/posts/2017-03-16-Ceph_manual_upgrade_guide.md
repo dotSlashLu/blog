@@ -2,7 +2,9 @@
 title = "Ceph手动升级要点"
 date = "2017-03-16T12:26:28.000Z"
 update_time = "2017-04-13T23:03:55.000Z"
-excerpt = "总结Ceph手动升级需要注意的地方"
+description = "总结Ceph手动升级需要注意的地方"
+categories = ["OP"]
+tags = ["Ceph"]
 +++
 
 总结一下自己从Hammer手动(不使用ceph-deploy)升级到Jewel遇到的问题作为前车之鉴。重要信息没有列举，没有直接遇到这些问题的读者请读完后再实施。

@@ -3,15 +3,8 @@ title = "About Me"
 date = "2018-9-8"
 +++
 
-Hugo is a static site engine written in Go.
+金山软件 WPS Go工程师
 
+前魅族科技云平台、技术平台基础架构工程师
 
-It makes use of a variety of open source projects including:
-
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
-
+<!-- Email: strings.Replace("dotslash.lu0at0gmail.com", "0at0", "@", 1) -->

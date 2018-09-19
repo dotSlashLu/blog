@@ -2,7 +2,9 @@
 title = "Ceph Luminous 安装要点"
 date = "2018-05-21T02:34:52.000Z"
 update_time = "2018-06-04T23:36:18.000Z"
-categories = ["Ceph", "OP"]
+categories = ["OP"]
+tags = ["ceph"]
+toc = true
 +++
 
 只记录Luminous 和旧版有区别的地方，基本流程没有变，参见[旧文](/2017/03/11/Ceph_manual_deploy_guide.html)。

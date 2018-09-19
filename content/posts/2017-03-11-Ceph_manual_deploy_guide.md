@@ -1,8 +1,9 @@
 +++
 title = "Ceph手动部署要点"
 date = "2017-03-10T17:59:12.000Z"
-categories = ["Ceph", "OP"]
-excerpt = "手动部署Ceph MON, OSD, MDS的步骤总结"
+categories = ["OP"]
+tags = ["Ceph"]
+decription = "手动部署Ceph MON, OSD, MDS的步骤总结"
 +++
 
 虽然现在preferred的安装方式是采用ceph-deploy，简化了安装了流程，而且便于日后的维护升级。但是手动走一遍有利于新手理解一些Ceph的概念。这篇文章总结一下我几次手动部署的步骤，特别注意了一下官方文档中不清楚了错误的地方。
