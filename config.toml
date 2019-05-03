@@ -1,4 +1,4 @@
-baseURL = "http://blog.lotuslab.org/"
+baseURL = "http://blog.pan1c.org/"
 languageCode = "zh-cn"
 title = "Lotuslab"
 theme = "whiteplain"
@@ -6,7 +6,7 @@ theme = "whiteplain"
 [params]
   # Date format
   dateFormat = "2006-01-02 15:04:05"
-  imgHost = "http://img.lotuslab.org/blog"
+  imgHost = "http://img.pan1c.org/blog"
 
 [taxonomies]
   category = "categories"
