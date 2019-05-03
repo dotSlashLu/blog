@@ -1,7 +1,8 @@
 +++
 title = "一次python内存泄露debug"
 date = "2017-07-20T02:14:20.925Z"
-categories = ["Programming", "Debug",]
+categories = ["编程"]
+tags = ["debug"]
 +++
 
 最近发现平台一个python组件跑一段时间之后就会丢消息，卡住，然后内存暴增。这个组件主要负责接收agent上报，上报采用了ZeroMQ，收到消息后分给worker thread进一步处理入库。Debug的时候没有经验颇踩了一些坑浪费了很多时间，记录在此以警世人。

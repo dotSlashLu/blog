@@ -2,13 +2,14 @@
 title = "使用certbot开启HTTPS"
 date = "2017-04-21T03:30:13.000Z"
 categories = ["OP"]
+tags = ["nginx"]
 +++
 
 Deadline就是生产力，因为Chrome 50开始不允许不安全域名使用`geolocation`，所以不得不上https了。使用certbot简直将添加https变成了一件trivial的事情，但是因为我是自己编译安装的nginx，所以没有自动配置好nginx。如果使用yum安装nginx，应该只需要安装执行certbot即可。
 
 安装certbot:
 
-```
+```bash
 yum -y install yum-utils
 yum-config-manager --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional
 
@@ -19,13 +20,15 @@ yum install certbot
 
 其中`webroot`指网站的根目录，`-d`为该目录的域名，可以有多个，可以有几组这样的`-w`,`-d`组合。
 
+这个命令会有两个验证步骤：在你指定的webroot下放一个文件，在远端尝试访问这个文件，来确定你是否有这个网站的权限。所以你执行这个命令前要保证这个域名和指定的webroot是可以访问的，否则会遇到类似`urn:acme:error:unauthorized :: The client lacks sufficient authorization :: Invalid response from http://sub.domain.com/.well-known/acme-challenge/longlonglonglonghash` 的错误。这时你需要检查下你的web服务器的配置了。
+
 接下来手动配置nginx。
 
 生成ssl dhparam：`openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048`。
 
 配置nginx：
 
-{{< highlight conf >}}
+```conf
 server {
         listen 443 http2 ssl;
 
@@ -76,7 +79,7 @@ server {
                 try_files $uri $uri/ =404;
         }
 }
-{{< /highlight >}}
+```
 
 之前的连接都是http的，既不想丢掉索引，又想大家都通过https访问，可以将http都跳转到https：
 
@@ -99,5 +102,6 @@ server {
 
 
 参考链接：
+
 - [https://certbot.eff.org/#centosrhel7-nginx](https://certbot.eff.org/#centosrhel7-nginx)
 - [https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-centos-7](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-centos-7)

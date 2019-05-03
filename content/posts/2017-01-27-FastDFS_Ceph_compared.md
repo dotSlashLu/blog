@@ -1,7 +1,8 @@
 +++
 title = "FastDFS与Ceph的比较"
 date = "2017-01-27T20:23:55.000Z"
-categories = ["存储", "分布式存储", "Ceph",]
+categories = ["存储", "分布式"]
+tags = ["ceph"]
 +++
 
 研究分布式存储只看Ceph是不够的，想有个横向对比，看看各有什么优缺点，从而深入对Ceph和分布式存储的理解。我司图片存储使用的是FastDFS，所以从它看起。
